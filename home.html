@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home StarCine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body class="dark-mode">
+  <div id="container-header">
+    <header>
+      <!-- Logo -->
+      <img src="/assets/logo.png" alt="Logo StarCine" id="logo-Starcine" />
+
+      <!-- Dropdown -->
+      <nav class="dropdown">
+        <button class="dropbtn">
+          <span id="title-menu">Categoria<i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Animes</a>
+          <a href="#">Filmes</a>
+          <a href="#">Séries</a>
+        </div>
+      </nav>
+
+      <!-- Busca -->
+      <div class="search-container">
+        <input type="search" placeholder="Buscar..." />
+        <img src="/assets/search.svg" alt="Buscar" class="search-icon"/>
+       
+        
+        
+        
+      </div>
+
+      <!-- Favoritos -->
+      <a href="#" class="favoritos-link">
+       <i class="fa-regular fa-bookmark" id="fav_svg"></i><span id="fav_title"> Lista de Favoritos</span>
+        
+       
+      </a>
+
+      <!-- Ícone de usuário -->
+     <nav class="dropdown-user">
+  <div id="icon-account">
+    <i class="fas fa-user user-icon"></i>
+  </div>
+  <button class="dropbtn-user" >
+    <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="user-dropdown-content">
+    <a href="#">Perfil</a>
+    <a href="#">Sair</a>
+  </div>
+</nav>
+
+
+      <!-- Tema claro/escuro -->
+      <div id="theme">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="turn-on" for="chk">
+          <i class="fas fa-moon icon-moon"></i>
+          <i class="fas fa-sun icon-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </header>
+  </div>
+
+    <!-- Sessão Animes -->
+<div class="midia-section">
+  <h2 id="title_animes"><a href="#">Animes</a></h2>
+  <div class="carousel-wrapper">
+  <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
+  <div class="carousel">
+  <div class="container-section">
+    <div class="subtitle-container">
+      <a href="teste.html" class="click-midia"><img src="/assets-anime/bleach-anime 1.png" alt="Bleach"></a>
+      <a href="" class="subtitle">Bleach</a>
+    </div>
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+</div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/attack-on-titan-poster-22 1.png" alt="Attack on Titan">
+      <a href="" class="subtitle">Attack on Titan</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/one-piece.png" alt="One Piece">
+      <a href="" class="subtitle">One Piece</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/the-apothecary-diaries.png" alt="The Apothecary Diaries">
+      <a href="" class="subtitle">The Apothecary Diaries</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/kaiju-no-8 1.png" alt="Kaiju No. 8">
+      <a href="" class="subtitle">Kaiju No. 8</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/Naruto Shippuden.png" alt="Naruto Shippuden">
+      <a href="" class="subtitle">Naruto Shippuden</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-anime/blue-exorcist.png" alt="Blue Exorcist">
+      <a href="" class="subtitle">Blue Exorcist</a>
+    </div>
+    
+
+    <div class="subtitle-container">
+      <img src="/assets-anime/Black clover HD.png" alt="Black Clover">
+      <a href="" class="subtitle">Black Clover</a>
+    </div>
+
+    <div class="subtitle-container">
+      <img src="/assets-anime/Boku no Hero Academia, season 1 (1).png" alt="Black Clover">
+      <a href="" class="subtitle"> My hero Academia</a>
+    </div>
+
+     <div class="subtitle-container">
+      <img src="/assets-anime/SOLO LEVELING WALLPAPER.png" alt="Black Clover">
+      <a href="" class="subtitle">Solo Leveling</a>
+    </div>
+
+     <div class="subtitle-container">
+      <img src="/assets-anime/My Anime For Life.png" alt="Black Clover">
+      <a href="" class="subtitle">Hunter X Hunter</a>
+    </div>
+
+    <div class="subtitle-container">
+      <img src="/assets-anime/Demon Slayer Posters.png" alt="Black Clover">
+      <a href="" class="subtitle">Demon Slayer</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Sessão Filmes -->
+<div class="midia-section">
+  <h2><a href="#">Filmes</a></h2>
+  <div class="carousel-wrapper">
+    <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel">
+  <div class="container-section">
+    <div class="subtitle-container">
+      <img src="/assets-movie/the-lord-of-the-rings.png" alt="The Lord of the Rings">
+      <a href="#" class="subtitle">The Lord of the Rings</a>
+    </div>
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+  </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/deadpool-and-wolverine.png" alt="Deadpool & Wolverine">
+      <a href="#" class="subtitle">Deadpool & Wolverine</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/The Chronicles Of Narnia - Prince Caspian 1.png" alt="Narnia: Prince Caspian">
+      <a href="#" class="subtitle">Narnia: Prince Caspian</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/flow.png" alt="Flow">
+      <a href="#" class="subtitle">Flow</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/alice-in-wonderland.png" alt="Alice in Wonderland">
+      <a href="#" class="subtitle">Alice in Wonderland</a>
+    </div>
+
+     <div class="subtitle-container">
+      <img src="/assets-movie/Rachel Zegler shares childhood photo dressed as Snow White amid flop.png" alt="Flow">
+      <a href="#" class="subtitle">Branca Neve</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/Titanic.png" alt="Alice in Wonderland">
+      <a href="#" class="subtitle">Titanic</a>
+    </div>
+
+    
+    <div class="subtitle-container">
+      <img src="/assets-movie/𝗪𝗶𝗰𝗸𝗲𝗱.png" alt="Alice in Wonderland">
+      <a href="#" class="subtitle">Wicked</a>
+    </div>
+
+    <div class="subtitle-container">
+      <img src="/assets-movie/Sonic 3 poster.png" alt="Flow">
+      <a href="#" class="subtitle">Sonic 3</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/Thunderbolts.png" alt="Alice in Wonderland">
+      <a href="#" class="subtitle">Thunderbolts</a>
+    </div>
+
+    <div class="subtitle-container">
+      <img src="/assets-movie/Dune Part Two Movie Poster.png" alt="Flow">
+      <a href="#" class="subtitle">Dune 3</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-movie/Constantine.png" alt="Alice in Wonderland">
+      <a href="#" class="subtitle">Constantine</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sessão Séries -->
+<div class="midia-section">
+  <h2><a href="#">Séries</a></h2>
+  <div class="carousel-wrapper">
+    <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel">
+  <div class="container-section">
+    <div class="subtitle-container">
+      <img src="/assets-series/Game of Thrones (2011).png" alt="Game of Thrones">
+      <a href="#" class="subtitle">Game of Thrones</a>
+    </div>
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+  </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/Moonlight Mystique (1) 1.png" alt="Moonlight Mystique">
+      <a href="#" class="subtitle">Moonlight Mystique</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/la casa de papel 1.png" alt="La Casa de Papel">
+      <a href="#" class="subtitle">La Casa de Papel</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/wanda 1.png" alt="WandaVision">
+      <a href="#" class="subtitle">WandaVision</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/Arcane League of Legends TV Poster 1.png" alt="Arcane">
+      <a href="#" class="subtitle">Arcane</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/Frasier (1).png" alt="Game of Thrones">
+      <a href="#" class="subtitle">Frasier</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/baixados (1).png" alt="Moonlight Mystique">
+      <a href="#" class="subtitle">The Handmaid's Tale</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/Netflix’s YOU Season 4 Parents Guide + Review.png" alt="La Casa de Papel">
+      <a href="#" class="subtitle">You</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/baixados (4).png" alt="WandaVision">
+      <a href="#" class="subtitle">Gossip Girl</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/baixados (3).png" alt="Arcane">
+      <a href="#" class="subtitle">The BigBang Theory</a>
+    </div>
+
+    <div class="subtitle-container">
+      <img src="/assets-series/The walking dead.png" alt="WandaVision">
+      <a href="#" class="subtitle">The walking dead</a>
+    </div>
+    <div class="subtitle-container">
+      <img src="/assets-series/friends.png" alt="Arcane">
+      <a href="#" class="subtitle">Friends</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sessão Obras melhores avaliadas -->
+<div id="ranking">
+  <div class="midia-section">
+      <h2><a href="#">Obras mais bem avaliadas</a></h2>
+  </div>
+    <div class="ranking-grid">
+      <div class="rating-midia">
+        <span class="rank-number">1</span>
+        <a href="#"><img src="/assets-melhores-avaliados/Jujutsu Kaisen  2020 ‧ Büyü ‧ 2 sezon 1.png" alt=""></a>
+        <span class="title">Jujutsu Kaisen</span>
+        <div class="stars" data-id="1">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rating-midia">
+        <span class="rank-number">2</span>
+        <a href="#"><img src="/assets-melhores-avaliados/Game of Thrones (2011).png" alt=""></a>
+        <span class="title">Game of Thrones</span>
+        <div class="stars" data-id="2">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rating-midia">
+        <span class="rank-number">3</span>
+        <a href="#"><img src="/assets-melhores-avaliados/Oppenheimer.png" alt=""></a>
+        <span class="title">Oppenheimer</span>
+        <div class="stars" data-id="3">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rating-midia">
+        <span class="rank-number">4</span>
+        <a href="#"><img src="/assets-melhores-avaliados/The Boy And The Heron(Studio Ghibli,2023).png" alt=""></a>
+        <span class="title">O Menino e a Garça</span>
+        <div class="stars" data-id="4">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rating-midia">
+        <span class="rank-number">5</span>
+        <a href="#"><img src="/assets-melhores-avaliados/baixados.png" alt=""></a>
+        <span class="title">Mickey 17</span>
+        <div class="stars" data-id="5">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rating-midia">
+        <span class="rank-number">6</span>
+        <a href="#"><img src="/assets-melhores-avaliados/baixados (9).png" alt=""></a>
+        <span class="title">Stranger Things</span>
+        <div class="stars" data-id="6">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+
+  <script src="home.js"></script>
+</body>
+</html>
