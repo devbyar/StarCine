@@ -4,22 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home StarCine</title>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Indie+Flower&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="home.css" />
 </head>
 <body class="dark-mode">
+
   <div id="container-header">
     <header>
-      <!-- Logo -->
       <img src="/assets/logo.png" alt="Logo StarCine" id="logo-Starcine" />
 
       <!-- Dropdown -->
       <nav class="dropdown">
         <button class="dropbtn">
-          <span id="title-menu">Categoria<i class="fas fa-chevron-down"></i></span>
+          <span id="title-menu">Categoria <i class="fas fa-chevron-down"></i></span>
         </button>
         <div class="dropdown-content">
           <a href="#">Animes</a>
@@ -32,36 +34,27 @@
       <div class="search-container">
         <input type="search" placeholder="Buscar..." />
         <img src="/assets/search.svg" alt="Buscar" class="search-icon"/>
-       
-        
-        
-        
       </div>
 
       <!-- Favoritos -->
       <a href="#" class="favoritos-link">
-       <i class="fa-regular fa-bookmark" id="fav_svg"></i><span id="fav_title"> Lista de Favoritos</span>
-        
-       
+        <i class="fa-regular fa-bookmark" id="fav_svg"></i>
+        <span id="fav_title">Lista de Favoritos</span>
       </a>
 
-      <!-- Ícone de usuário -->
-     <nav class="dropdown-user">
-  <div id="icon-account">
-    <i class="fas fa-user user-icon"></i>
-  </div>
-  <button class="dropbtn-user" >
-    <i class="fas fa-chevron-down"></i>
-  </button>
+      <!-- Usuário -->
+      <nav class="dropdown-user">
+        <div id="icon-account">
+          <i class="fas fa-user user-icon"></i>
+        </div>
+        <button class="dropbtn-user"><i class="fas fa-chevron-down"></i></button>
+        <div class="user-dropdown-content">
+          <a href="#">Perfil</a>
+          <a href="#">Sair</a>
+        </div>
+      </nav>
 
-  <div class="user-dropdown-content">
-    <a href="#">Perfil</a>
-    <a href="#">Sair</a>
-  </div>
-</nav>
-
-
-      <!-- Tema claro/escuro -->
+      <!-- Modo claro/escuro -->
       <div id="theme">
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="turn-on" for="chk">
@@ -76,16 +69,17 @@
     <!-- Sessão Animes -->
 <div class="midia-section">
   <h2 id="title_animes"><a href="#">Animes</a></h2>
-  <div class="carousel-wrapper">
+    <div class="carousel-wrapper">
   <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
   <div class="carousel">
   <div class="container-section">
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+</div>
     <div class="subtitle-container">
       <a href="teste.html" class="click-midia"><img src="/assets-anime/bleach-anime 1.png" alt="Bleach"></a>
       <a href="" class="subtitle">Bleach</a>
     </div>
-    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
-</div>
+
     <div class="subtitle-container">
       <img src="/assets-anime/attack-on-titan-poster-22 1.png" alt="Attack on Titan">
       <a href="" class="subtitle">Attack on Titan</a>
@@ -111,7 +105,6 @@
       <a href="" class="subtitle">Blue Exorcist</a>
     </div>
     
-
     <div class="subtitle-container">
       <img src="/assets-anime/Black clover HD.png" alt="Black Clover">
       <a href="" class="subtitle">Black Clover</a>
@@ -147,12 +140,13 @@
     <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
     <div class="carousel">
   <div class="container-section">
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+  </div>
     <div class="subtitle-container">
       <img src="/assets-movie/the-lord-of-the-rings.png" alt="The Lord of the Rings">
       <a href="#" class="subtitle">The Lord of the Rings</a>
     </div>
-    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
-  </div>
+
     <div class="subtitle-container">
       <img src="/assets-movie/deadpool-and-wolverine.png" alt="Deadpool & Wolverine">
       <a href="#" class="subtitle">Deadpool & Wolverine</a>
@@ -213,12 +207,13 @@
     <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
     <div class="carousel">
   <div class="container-section">
+    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+  </div>
     <div class="subtitle-container">
       <img src="/assets-series/Game of Thrones (2011).png" alt="Game of Thrones">
       <a href="#" class="subtitle">Game of Thrones</a>
     </div>
-    <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
-  </div>
+
     <div class="subtitle-container">
       <img src="/assets-series/Moonlight Mystique (1) 1.png" alt="Moonlight Mystique">
       <a href="#" class="subtitle">Moonlight Mystique</a>
@@ -267,91 +262,11 @@
   </div>
 </div>
 
-<!-- Sessão Obras melhores avaliadas -->
-<div id="ranking">
-  <div class="midia-section">
-      <h2><a href="#">Obras mais bem avaliadas</a></h2>
-  </div>
-    <div class="ranking-grid">
-      <div class="rating-midia">
-        <span class="rank-number">1</span>
-        <a href="#"><img src="/assets-melhores-avaliados/Jujutsu Kaisen  2020 ‧ Büyü ‧ 2 sezon 1.png" alt=""></a>
-        <span class="title">Jujutsu Kaisen</span>
-        <div class="stars" data-id="1">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
-
-      <div class="rating-midia">
-        <span class="rank-number">2</span>
-        <a href="#"><img src="/assets-melhores-avaliados/Game of Thrones (2011).png" alt=""></a>
-        <span class="title">Game of Thrones</span>
-        <div class="stars" data-id="2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
-
-      <div class="rating-midia">
-        <span class="rank-number">3</span>
-        <a href="#"><img src="/assets-melhores-avaliados/Oppenheimer.png" alt=""></a>
-        <span class="title">Oppenheimer</span>
-        <div class="stars" data-id="3">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-      </div>
-
-      <div class="rating-midia">
-        <span class="rank-number">4</span>
-        <a href="#"><img src="/assets-melhores-avaliados/The Boy And The Heron(Studio Ghibli,2023).png" alt=""></a>
-        <span class="title">O Menino e a Garça</span>
-        <div class="stars" data-id="4">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
-
-      <div class="rating-midia">
-        <span class="rank-number">5</span>
-        <a href="#"><img src="/assets-melhores-avaliados/baixados.png" alt=""></a>
-        <span class="title">Mickey 17</span>
-        <div class="stars" data-id="5">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-      </div>
-
-      <div class="rating-midia">
-        <span class="rank-number">6</span>
-        <a href="#"><img src="/assets-melhores-avaliados/baixados (9).png" alt=""></a>
-        <span class="title">Stranger Things</span>
-        <div class="stars" data-id="6">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-      </div>
+  <section class="ranking-section">
+    <h2>OBRAS MAIS BEM AVALIADAS</h2>
+    <div class="ranking-list" id="ranking-list">
     </div>
-  </div>
+    </section>
 
 <!-- Footer -->
 
