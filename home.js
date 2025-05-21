@@ -87,3 +87,10 @@ obras.forEach((obra, index) => {
 
   container.appendChild(item);
 });
+
+const chk = document.getElementById('chk');
+const rankingSection = document.getElementById('ranking-section');
+
+chk.addEventListener('change', () => {
+  rankingSection.classList.toggle('light');
+});
