@@ -481,3 +481,56 @@ body:not(.dark-mode) .midia-section .subtitle:hover {
   border-color: #e02424;
 }
 
+.simple-footer {
+  width: 100%;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e02424;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Tema claro */
+body.light .simple-footer {
+  background-color: #f5f5f5;
+  color: #1a1f29;
+}
+
+body.light .footer-links a {
+  color: #1a1f29;
+}
+
+body.light .footer-links a:hover {
+  color: #e02424;
+}
+
+body.light .footer-copy {
+  color: #555;
+}
