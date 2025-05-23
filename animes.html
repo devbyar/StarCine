@@ -3,80 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Animes StarCine</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Indie+Flower&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="home.css" />
+  <title>Animes | StarCine</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body class="dark-mode">
-  <main style="flex: 1;"></main>
+
+  <!-- Reaproveite o header do seu site -->
   <div id="container-header">
     <header>
       <img src="/assets/logo.png" alt="Logo StarCine" id="logo-Starcine" />
-
-      <!-- Dropdown -->
-      <nav class="dropdown">
-        <button class="dropbtn">
-          <span id="title-menu">Categoria <i class="fas fa-chevron-down"></i></span>
-        </button>
-        <div class="dropdown-content">
-          <a href="/animes.html">Animes</a>
-          <a href="/filmes.html">Filmes</a>
-          <a href="/series.html">Séries</a>
-        </div>
-      </nav>
-
-      <!-- Busca -->
-      <div class="search-container">
-        <input type="search" placeholder="Buscar..." />
-        <img src="/assets/search.svg" alt="Buscar" class="search-icon"/>
-      </div>
-
-      <!-- Favoritos -->
-      <a href="#" class="favoritos-link">
-        <i class="fa-regular fa-bookmark" id="fav_svg"></i>
-        <span id="fav_title">Lista de Favoritos</span>
-      </a>
-
-      <!-- Usuário -->
-      <nav class="dropdown-user">
-        <div id="icon-account">
-          <i class="fas fa-user user-icon"></i>
-        </div>
-        <button class="dropbtn-user"><i class="fas fa-chevron-down"></i></button>
-        <div class="user-dropdown-content">
-          <a href="#">Perfil</a>
-          <a href="#">Sair</a>
-        </div>
-      </nav>
-
-      <!-- Modo claro/escuro -->
-      <div id="theme">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="turn-on" for="chk">
-          <i class="fas fa-moon icon-moon"></i>
-          <i class="fas fa-sun icon-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
+      <h1 style="color: white;">Animes</h1>
+      <!-- Você pode remover os outros itens do header se quiser foco só nos animes -->
     </header>
   </div>
 
-  <section class="categoria-section">
-  <h2 class="categoria-titulo">ANIMES</h2>
-  <div class="categoria-grid">
-    <div class="categoria-item">
-      <img src="assets/animes/Bleach.jpg" alt="Bleach">
-      <p>Bleach</p>
+  <main style="padding-top: 100px;">
+    <section class="anime-gallery">
+      <div class="subtitle-container">
+        <img src="/assets-anime/bleach-anime 1.png" alt="Bleach">
+        <a href="#" class="subtitle">Bleach</a>
+      </div>
+
+      <div class="subtitle-container">
+        <img src="/assets-anime/attack-on-titan-poster-22 1.png" alt="Attack on Titan">
+        <a href="#" class="subtitle">Attack on Titan</a>
+      </div>
+
+      <div class="subtitle-container">
+        <img src="/assets-anime/one-piece.png" alt="One Piece">
+        <a href="#" class="subtitle">One Piece</a>
+      </div>
+
+      <div class="subtitle-container">
+        <img src="/assets-anime/the-apothecary-diaries.png" alt="The Apothecary Diaries">
+        <a href="#" class="subtitle">The Apothecary Diaries</a>
+      </div>
+
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/OnePiece.png" alt="One Piece">
+        <p>One Piece</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Black_Clover_Volume_1.png" alt="Black Clover">
+        <p>Black Clover</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Blue_Exorcist_manga_volume_1_cover.jpg" alt="Blue Exorcist">
+        <p>Blue Exorcist</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto">
+        <p>Naruto</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Solo_Leveling_vol_1.jpg" alt="Solo Leveling">
+        <p>Solo Leveling</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Demon_Slayer_Kimetsu_no_Yaiba_volume_1_cover.jpg" alt="Demon Slayer">
+        <p>Demon Slayer</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/My_Hero_Academia_Volume_1.png" alt="My Hero Academia">
+        <p>My Hero Academia</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Hunter_x_Hunter_vol._1.png" alt="Hunter x Hunter">
+        <p>Hunter x Hunter</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Natsume%27s_Book_of_Friends_volume_1.jpg" alt="Natsume Yuujin-chou">
+        <p>Natsume yuujin-chou</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Kamisama_Hajimemashita_volume_1_cover.jpg" alt="Kamisama Kiss">
+        <p>Kamisama kiss</p>
+      </div>
+      <div class="subtitle-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Dr._Stone_volume_1.png" alt="Dr. Stone">
+        <p>Dr. Stone</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="simple-footer">
+    <div class="footer-links">
+      <a href="#">Sobre nós</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
     </div>
-    <div class="categoria-item">
-      <img src="assets/animes/Attack on Titan.jpg" alt="Attack on Titan">
-      <p>Attack on Titan</p>
-    </div>
-    <!-- Adicione mais obras aqui -->
-  </div>
-</section>
+    <p class="footer-copy">Copyright © 2025 By StarCine</p>
+  </footer>
+
+</body>
+</html>
