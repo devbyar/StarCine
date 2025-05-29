@@ -1,99 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Animes | StarCine</title>
-  <link rel="stylesheet" href="home.css">
-</head>
-<body class="dark-mode">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home StarCine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Reaproveite o header do seu site -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="animes.css" />
+</head>
+
+<body class="dark-mode">
   <div id="container-header">
     <header>
-      <img src="/assets/logo.png" alt="Logo StarCine" id="logo-Starcine" />
-      <h1 style="color: white;">Animes</h1>
-      <!-- Você pode remover os outros itens do header se quiser foco só nos animes -->
+      <!-- Logo -->
+      <a href="home.html">
+        <img src="assets/logo.png" alt="StarCine Logo" class="logo" />
+      </a>
+
+      <!-- Dropdown -->
+      <nav class="dropdown">
+        <button class="dropbtn">
+          <span id="title-menu">Categoria<i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="dropdown-content">
+          <a href="/animes.html">Animes</a>
+          <a href="filmes.html">Filmes</a>
+          <a href="series.html">Séries</a>
+        </div>
+      </nav>
+
+      <!-- Busca -->
+      <div class="search-container">
+        <input type="search" placeholder="Buscar..." />
+        <img src="./assets/search.svg" alt="Buscar" class="search-icon" />
+
+
+      </div>
+
+      <!-- Favoritos -->
+      <a href="#" class="favoritos-link">
+        <i class="fa-regular fa-bookmark" id="fav_svg"></i><span id="fav_title"> Lista de Favoritos</span>
+
+
+      </a>
+
+      <!-- Icone Usuario -->
+      <div class="dropdown-user">
+        <div class="user-menu-toggle" onclick="toggleUserMenu()">
+          <div id="icon-account">
+            <i class="fas fa-user user-icon"></i>
+          </div>
+          <i class="fas fa-chevron-down" style="color: white;"></i>
+        </div>
+
+        <div id="userDropdown" class="dropdown-content-user">
+          <a href="#">Perfil</a>
+          <a href="#">Sair</a>
+        </div>
+      </div>
+
+
+      <!-- Tema claro/escuro -->
+      <div id="theme">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="turn-on" for="chk">
+          <i class="fas fa-moon icon-moon"></i>
+          <i class="fas fa-sun icon-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
     </header>
   </div>
 
-  <main style="padding-top: 100px;">
-    <section class="anime-gallery">
-      <div class="subtitle-container">
-        <img src="/assets-anime/bleach-anime 1.png" alt="Bleach">
-        <a href="#" class="subtitle">Bleach</a>
-      </div>
+<main>
+  <h1 class="titulo-pagina">Animes</h1>
+</main>
 
-      <div class="subtitle-container">
-        <img src="/assets-anime/attack-on-titan-poster-22 1.png" alt="Attack on Titan">
-        <a href="#" class="subtitle">Attack on Titan</a>
-      </div>
+<div class="anime-grid">
+  <div class="anime-item"><img src="assets-anime/bleach-anime 1.png" alt="Bleach"><p>Bleach</p></div>
+  <div class="anime-item"><img src="assets-anime/attack-on-titan-poster-22 1.png" alt="Attack on Titan"><p>Attack on Titan</p></div>
+  <div class="anime-item"><img src="assets-anime/the-apothecary-diaries.png" alt="Diário de uma Apotecária"><p>Diário de uma Apotecária</p></div>
+  <div class="anime-item"><img src="assets-anime/kaiju-no-8 1.png" alt="Kaiju No. 8"><p>Kaiju No. 8</p></div>
+  <div class="anime-item"><img src="assets-anime/one-piece.png" alt="One Piece"><p>One Piece</p></div>
+  <div class="anime-item"><img src="assets-anime/Black clover HD.png" alt="Black Clover"><p>Black Clover</p></div>
+  <div class="anime-item"><img src="assets-anime/blue-exorcist.png" alt="Blue Exorcist"><p>Blue Exorcist</p></div>
+  <div class="anime-item"><img src="assets-anime/Naruto Shippuden.png" alt="Naruto Shippuden"><p>Naruto Shippuden</p></div>
+  <div class="anime-item"><img src="assets-anime/SOLO LEVELING WALLPAPER.png" alt="Solo Leveling"><p>Solo Leveling</p></div>
+  <div class="anime-item"><img src="assets-anime/Demon Slayer Posters.png" alt="Demon Slayer"><p>Demon Slayer</p></div>
+  <div class="anime-item"><img src="assets-anime/Boku no Hero Academia, season 1.png" alt="Boku no Hero"><p>Boku no Hero</p></div>
+  <div class="anime-item"><img src="assets-anime/My Anime For Life.png" alt="Hunter x Hunter"><p>Hunter x Hunter</p></div>
+  <div class="anime-item"><img src="assets-anime/Natsume Yuujinchou.jpeg" alt="Natsume Yuujinchou"><p>Natsume Yuujinchou</p></div>
+  <div class="anime-item"><img src="assets-anime/kamisama.jpeg" alt="Kamisama Kiss"><p>Kamisama Kiss</p></div>
+  <div class="anime-item"><img src="assets-anime/dr stone.jpeg" alt="Dr. Stone"><p>Dr. Stone</p></div>
+  <div class="anime-item"><img src="assets-anime/Dragon Ball.jpeg" alt="Dragon Ball Z"><p>Dragon Ball Z</p></div>
+  <div class="anime-item"><img src="assets-anime/Tokyo Revengers.jpeg" alt="Tokyo Revengers"><p>Tokyo Revengers</p></div>
+  <div class="anime-item"><img src="assets-anime/vinland saga.jpeg" alt="Vinland Saga"><p>Vinland Saga</p></div>
+  <div class="anime-item"><img src="assets-anime/chainsaw man.jpeg" alt="Chainsaw Man"><p>Chainsaw Man</p></div>
+  <div class="anime-item"><img src="assets-anime/mob psycho.jpeg" alt="Mob Psycho 100"><p>Mob Psycho 100</p></div>
+  <div class="anime-item"><img src="assets-anime/Fate stay night.jpeg" alt="Fate Stay Night"><p>Fate Stay Night</p></div>
+  <div class="anime-item"><img src="assets-anime/parasyte.jpeg" alt="Parasyte"><p>Parasyte</p></div>
+  <div class="anime-item"><img src="assets-anime/Death Note.jpeg" alt="Death Note"><p>Death Note</p></div>
+  <div class="anime-item"><img src="assets-anime/Erased.jpeg" alt="Erased"><p>Erased</p></div>
+  <div class="anime-item"><img src="assets-anime/Your Lie In April.jpeg" alt="Your Lie in April"><p>Your Lie in April</p></div>
+  <div class="anime-item"><img src="assets-anime/Steins gate.jpeg" alt="Steins;Gate"><p>Steins;Gate</p></div>
+</div>
 
-      <div class="subtitle-container">
-        <img src="/assets-anime/one-piece.png" alt="One Piece">
-        <a href="#" class="subtitle">One Piece</a>
-      </div>
+<footer>
+  <p>StarCine © 2025 | Política de Privacidade | Termos de Uso</p>
+</footer>
 
-      <div class="subtitle-container">
-        <img src="/assets-anime/the-apothecary-diaries.png" alt="The Apothecary Diaries">
-        <a href="#" class="subtitle">The Apothecary Diaries</a>
-      </div>
-
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/OnePiece.png" alt="One Piece">
-        <p>One Piece</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Black_Clover_Volume_1.png" alt="Black Clover">
-        <p>Black Clover</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Blue_Exorcist_manga_volume_1_cover.jpg" alt="Blue Exorcist">
-        <p>Blue Exorcist</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto">
-        <p>Naruto</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Solo_Leveling_vol_1.jpg" alt="Solo Leveling">
-        <p>Solo Leveling</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Demon_Slayer_Kimetsu_no_Yaiba_volume_1_cover.jpg" alt="Demon Slayer">
-        <p>Demon Slayer</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/My_Hero_Academia_Volume_1.png" alt="My Hero Academia">
-        <p>My Hero Academia</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Hunter_x_Hunter_vol._1.png" alt="Hunter x Hunter">
-        <p>Hunter x Hunter</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Natsume%27s_Book_of_Friends_volume_1.jpg" alt="Natsume Yuujin-chou">
-        <p>Natsume yuujin-chou</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Kamisama_Hajimemashita_volume_1_cover.jpg" alt="Kamisama Kiss">
-        <p>Kamisama kiss</p>
-      </div>
-      <div class="subtitle-container">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Dr._Stone_volume_1.png" alt="Dr. Stone">
-        <p>Dr. Stone</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="simple-footer">
-    <div class="footer-links">
-      <a href="#">Sobre nós</a>
-      <a href="#">Política de Privacidade</a>
-      <a href="#">Termos de Uso</a>
-    </div>
-    <p class="footer-copy">Copyright © 2025 By StarCine</p>
-  </footer>
+  <script src="animes.js"></script>
 
 </body>
 </html>

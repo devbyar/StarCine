@@ -40,7 +40,7 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
 const obras = [
   {
     nome: "Jujutsu Kaisen",
-    imagem: "assets-melhores-avaliados/Jujutsu Kaisen  2020 ‧ Büyü ‧ 2 sezon 1.png",
+    imagem: "assets-melhores-avaliados/Jujutsu Kaisen.png",
     nota: 5
   },
   {

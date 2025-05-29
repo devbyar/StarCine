@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filmes StarCine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="filmes.css" />
+</head>
+
+<body class="dark-mode">
+  <div id="container-header">
+    <header>
+      <!-- Logo -->
+      <a href="home.html">
+        <img src="assets/logo.png" alt="StarCine Logo" class="logo" />
+      </a>
+
+      <!-- Dropdown -->
+      <nav class="dropdown">
+        <button class="dropbtn">
+          <span id="title-menu">Categoria<i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="dropdown-content">
+          <a href="/animes.html">Animes</a>
+          <a href="/filmes.html">Filmes</a>
+          <a href="/series.html">Séries</a>
+        </div>
+      </nav>
+
+      <!-- Busca -->
+      <div class="search-container">
+        <input type="search" placeholder="Buscar..." />
+        <img src="./assets/search.svg" alt="Buscar" class="search-icon" />
+
+
+      </div>
+
+      <!-- Favoritos -->
+      <a href="#" class="favoritos-link">
+        <i class="fa-regular fa-bookmark" id="fav_svg"></i><span id="fav_title"> Lista de Favoritos</span>
+
+
+      </a>
+
+      <!-- Icone Usuario -->
+      <div class="dropdown-user">
+        <div class="user-menu-toggle" onclick="toggleUserMenu()">
+          <div id="icon-account">
+            <i class="fas fa-user user-icon"></i>
+          </div>
+          <i class="fas fa-chevron-down" style="color: white;"></i>
+        </div>
+
+        <div id="userDropdown" class="dropdown-content-user">
+          <a href="#">Perfil</a>
+          <a href="#">Sair</a>
+        </div>
+      </div>
+
+
+      <!-- Tema claro/escuro -->
+      <div id="theme">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="turn-on" for="chk">
+          <i class="fas fa-moon icon-moon"></i>
+          <i class="fas fa-sun icon-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </header>
+  </div>
+
+<main>
+  <h1 class="titulo-pagina">Filmes</h1>
+</main>
+
+<div class="filme-grid">
+  <div class="filme-item"><img src="/assets-movie/alice-in-wonderland.png" alt="Alice no País das Maravilhas"><p>Alice no País das Maravilhas</p></div>
+  <div class="filme-item"><img src="assets-movie/Constantine.png" alt="Constantine"><p>Constantine</p></div>
+  <div class="filme-item"><img src="assets-movie/deadpool-and-wolverine.png" alt="deadpool-and-wolverine"><p>Deadpool e Wolverine</p></div>
+  <div class="filme-item"><img src="assets-movie/Dune Part Two Movie Poster.png" alt="duna"><p>Duna 2</p></div>
+  <div class="filme-item"><img src="assets-movie/flow.png" alt="flow"><p>Flow</p></div>
+  <div class="filme-item"><img src="assets-movie/Rachel Zegler shares childhood photo dressed as Snow White amid flop.png" alt="Branca de neve"><p>Branca de Neve</p></div>
+  <div class="filme-item"><img src="assets-movie/Sonic 3 poster.png" alt="Sonic 3"><p>Sonic 3</p></div>
+  <div class="filme-item"><img src="assets-movie/The Chronicles Of Narnia - Prince Caspian 1.png" alt="Cronicas de narnia"><p>Crônicas de Narnia</p></div>
+  <div class="filme-item"><img src="assets-movie/the-lord-of-the-rings.png" alt="senhor dos aneis"><p>La La Land</p></div>
+  <div class="filme-item"><img src="assets-movie/Thunderbolts.png" alt="Thunderbolts"><p>Thunderbolts</p></div>
+  <div class="filme-item"><img src="assets-movie/Titanic.png" alt="Titanic"><p>Titanic</p></div>
+  <div class="filme-item"><img src="assets-movie/wicked.png" alt="wicked"><p>Wicked</p></div>
+</div>
+
+<footer>
+  <p>StarCine © 2025 | Política de Privacidade | Termos de Uso</p>
+</footer>
+
+  <script src="filmes.js"></script>
+
+</body>
+</html>

@@ -291,7 +291,7 @@ body:not(.dark-mode) header .turn-on .ball {
     }
     
 
-    .anime-grid {
+    .serie-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
       gap: 20px;
@@ -299,15 +299,15 @@ body:not(.dark-mode) header .turn-on .ball {
       justify-items: center;
     }
 
-    .anime-item {
+    .serie-item {
       text-align: center;
     }
 
-    .anime-item a {
+    .serie-item a {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .anime-item img {
+    .serie-item img {
       width: 180px;
       height: 260px;
       object-fit: cover;
@@ -315,11 +315,11 @@ body:not(.dark-mode) header .turn-on .ball {
       transition: transform 0.3s;
     }
 
-    .anime-item img:hover {
+    .serie-item img:hover {
       transform: scale(1.05);
     }
 
-    .anime-item p {
+    .serie-item p {
       margin-top: 10px;
       margin-bottom: 20px;
       font-size: 20px;
